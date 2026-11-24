@@ -38,12 +38,12 @@ const CONFIG = {
 
   // Taruh foto di folder "foto" lalu daftarkan di sini
   foto: [
-    { src: "date.jpg", caption: "First Date kita 💕" },
+    { src: "date.JPG", caption: "First Date kita 💕" },
     { src: "bonceng.jpg", caption: "Pertama Kali kita Boncengan" },
     { src: "photobooth.jpg", caption: "Photobooth Pertama kita" },
     { src: "sc2.jpg", caption: "Rutinitas Malam Kita" },
     { src: "kecil.png", caption: "Waktu Kita Masih Kecil" },
-    { src: "chat.png", caption: "Chat Kita" }
+    { src: "chat.PNG", caption: "Chat Kita" }
   ]
 };
 /* ===================================================== */
