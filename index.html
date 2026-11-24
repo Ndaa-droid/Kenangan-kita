@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenangan Kita 💕</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@400;500;600&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Teks berjalan -->
+  <div class="marquee">
+    <div class="marquee-track" id="marquee"></div>
+  </div>
+
+  <!-- Kelopak & hati jatuh -->
+  <div class="falling" id="falling" aria-hidden="true"></div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-card">
+      <p class="tag">✨ ~ Bucin Mode : ON ~ ✨</p>
+      <h1 class="title" id="judul">Kenangan Kita</h1>
+      <p class="names" id="names"></p>
+      <p class="subtitle" id="subjudul"></p>
+
+      <div class="counter-label">💞 Udah jadian selama 💞</div>
+      <div class="counter">
+        <div><span id="c-tahun">0</span><small>Tahun</small></div>
+        <div><span id="c-bulan">0</span><small>Bulan</small></div>
+        <div><span id="c-hari">0</span><small>Hari</small></div>
+        <div><span id="c-jam">0</span><small>Jam</small></div>
+        <div><span id="c-menit">0</span><small>Menit</small></div>
+        <div><span id="c-detik">0</span><small>Detik</small></div>
+      </div>
+      <p class="since" id="since"></p>
+
+      <div class="buttons">
+        <a href="#galeri" class="btn">📸 Lihat Foto</a>
+        <button class="btn btn-alt" id="btn-surat">💌 Buka Surat Cinta</button>
+        <a href="#lagu" class="btn btn-music">🎵 Lagu Kita</a>
+      </div>
+      <p class="hint">(klik di mana aja, nanti ada kejutan 💖)</p>
+    </div>
+  </header>
+
+  <!-- GALERI -->
+  <main id="galeri" class="section">
+    <h2>📸 Album Kenangan Kita 📸</h2>
+    <div class="gallery" id="gallery"></div>
+  </main>
+
+  <!-- ALASAN -->
+  <section class="section reasons-wrap">
+    <h2>💘 Kenapa Kaka Sayank Dede 💘</h2>
+    <div class="reasons" id="reasons"></div>
+  </section>
+
+  <!-- LAGU KITA -->
+  <section id="lagu" class="section song">
+    <h2>🎵 Lagu Kita: Akad 🎵</h2>
+    <p class="song-note">Pencet tombol play, terus dengerin bareng ya 🥺💕</p>
+    <div class="video-frame">
+      <video controls playsinline preload="metadata">
+        <source src="video/akadd.mp4" type="video/mp4">
+        Browser kamu belum mendukung video.
+      </video>
+    </div>
+  </section>
+
+  <footer>
+    <p class="footer-text" id="footer-text"></p>
+    <p class="blink">~ i love u to the moon and back ~ 🌙</p>
+  </footer>
+
+  <!-- SURAT CINTA -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="letter">
+      <button class="close" id="modal-close" aria-label="Tutup">&times;</button>
+      <h3>💌 Surat Cinta Untuk Dede 💌</h3>
+      <p id="surat"></p>
+      <p class="sign" id="sign"></p>
+    </div>
+  </div>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lb-close" aria-label="Tutup">&times;</button>
+    <button class="lb-nav lb-prev" id="lb-prev" aria-label="Sebelumnya">&#10094;</button>
+    <figure>
+      <img id="lb-img" alt="">
+      <figcaption>
+        <strong id="lb-caption"></strong>
+      </figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lb-next" aria-label="Berikutnya">&#10095;</button>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
